@@ -1,0 +1,9 @@
+footer {
+    position: sticky;
+    position: relative;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+}
