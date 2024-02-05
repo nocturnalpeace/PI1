@@ -47,6 +47,70 @@ h3{
     align-items: center;
     justify-content: center;
  }
+
+ /* het menu */
+
+ header nav {
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color: #80BF9A;
+    padding:4em 1em 1em;
+    width:12em;
+
+    translate: 100% 0;
+
+    transition: .3s;
+ }
+
+ header nav.open {
+    translate: 0% 0;
+}
+
+
+
+ header nav ul {
+ list-style:none;
+ margin:0;
+ padding:0;
+
+ display: grid;
+ gap:.25em;
+
+}
+
+header nav ul a { 
+    color:white;
+    display: block;
+    border-style:solid  ;
+    border-width:.1em;
+    border-color: white;
+    border-radius:.5em;
+
+    padding:1em;
+}
+
+/* de menu button */
+header button {
+    position: fixed;
+    top:1em;
+    right:1em;
+    z-index: 1;
+
+    font-size:1em;
+    padding:.25em .5em;
+
+    background-color: #CAE2CC;
+
+    border-style:solid;
+    border-width:.1em;
+    border-color: black;
+    border-radius:.5em;
+}
+
+
+ /* main */
 main{
     margin-bottom: 4em;
 }
@@ -194,9 +258,89 @@ gap: 1em;
     flex-direction: column;
 }
 
-/* .fixed{
-    position:fixed;
-    top: 30%;
-    right: 30%;
-    z-index: -1;
-} */
+/* het formulier */
+
+form {
+    /* voor uimte tussen de feildsets en ook de button */
+    display:grid;
+    gap:1em;
+}
+
+fieldset {
+    padding:.5em 1em 1em;
+    background-color: yellow;
+
+    border:none;
+    border-radius:1em;
+
+    display: grid;
+    gap:.5em;
+}
+
+fieldset legend {
+    font-size:1.5em;
+}
+
+form fieldset p {
+    margin:0;
+}
+
+form fieldset label {
+    display: block;
+}
+
+/* formuliervelden */
+form input, 
+form select, 
+form textarea {
+    box-sizing: border-box;
+    display: block;
+    width:100%;
+
+    font-size: 1em;
+    padding:.25em;
+    border-radius:.5em;
+    border-style:solid;
+    border-width:.1em;
+    border-color: black;
+}
+
+form input[type="range"] {
+    padding:0;
+}
+
+form input[type="number"] {
+    width:5ch;
+}
+
+
+form div {
+    display:flex;
+    gap:1em;
+}
+
+form button {
+    font-size:1em;
+
+    border-radius:1rem;
+    border:none;
+    padding:1rem;
+
+    flex-basis: 0;
+}
+
+form button[type="reset"] {
+    background-color: white;
+    color:crimson;    
+
+    flex-grow: 3;
+}
+
+
+form button[type="submit"] {
+    background-color: green;
+    color:white;    
+    font-size:1.25em;
+
+    flex-grow: 5;
+}

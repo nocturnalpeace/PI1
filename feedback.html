@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body class="bronnen">
+    <header>
+        <h1>Feedback</h1>
+        <p>We horen graag van u.</p>
+
+        <!-- het menu -->
+        <button>menu</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="stap1.html">Stap 1</a></li>
+                <li><a href="stap2.html">Stap 2</a></li>
+                <li><a href="stap3.html">Stap 3</a></li>
+                <li><a href="feedback.html">feedback</a></li>
+                <li><a href="bronnen.html">bronnen</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- met hulp gemaakt-->
+        <form>
+            <fieldset>
+                <legend>Info over jezelf</legend>
+                <p>Niet verplicht, maar het helpt ons om inzicht te krijgen wat we moeten verbeteren.
+                    NB. We gaan natuurlijk zorgvuldig met uw gegevens om.</p>
+                    <label>
+                        je naam 
+                        <input type="text" placeholder="voor en achter">
+                    </label>
+                    <label>
+                        je leeftijd 
+                        <select>
+                            <option>maak een keuze</option>
+                            <option>tot 20 jaar</option>
+                            <option>tussen 20 en 30 jaar</option>
+                            <option>tussen 30 en 40 jaar</option>
+                            <option>heel oud</option>
+                        </select>
+                    </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Hoe ging het</legend>
+                <p>Kunt u vertellen of het stappenplan geholpen heeft en wat er beter kan</p>
+                <!-- voor de streepjes onder de sliders -->
+                <datalist id="scale">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </datalist>
+                <label>
+                    Hoe moeilijk was het?
+                    <input type="range" min="1" max="3" step="1" value="1" list="scale">
+                </label>
+                <label>
+                    Was het te begrijpen?
+                    <input type="range" min="1" max="3" step="1" value="1" list="scale">
+                </label>
+                <label>
+                    hoe vaak gehuild
+                    <input type="number" value="0">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tips & Tops</legend>
+                <p>Kunt u vertellen wat er goed ging en wat we kunnen verbeteren om het makkelijker te maken</p>
+                <label>
+                    tips
+                    <textarea cols="30" rows="10" placeholder="we waarderen gemopper"></textarea>
+                </label>  
+                <label>
+                    tops
+                    <textarea cols="30" rows="10" placeholder="en complimenten ook"></textarea>
+                </label>  
+            </fieldset>
+            
+            <div>
+                <button type="reset">ik heb gerotzooit, ik wil opnieuw beginnen</button>
+                <button type="submit">kom maar op met die feedback!</button>
+            </div>
+
+        </form>
+
+    </main>
+    <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="stap1.html">Stap 1</a></li>
+                    <li><a href="stap2.html">Stap 2</a></li>
+                    <li><a href="stap3.html">Stap 3</a></li>
+                    <li><a href="feedback.html">feedback</a></li>
+                </ul>
+            </nav>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    
+</body>
+</html>
