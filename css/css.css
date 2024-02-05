@@ -1,14 +1,14 @@
      @font-face {
     font-family: 'Comic Block DEMO by Marta van E';
-    src: url('/assets/ComicBlockDEMObyMartavanEck.woff2') format('woff2'),
-        url('/assets/ComicBlockDEMObyMartavanEck.woff') format('woff');
+    src: url('../assets/ComicBlockDEMObyMartavanEck.woff2') format('woff2'),
+        url('../assets/ComicBlockDEMObyMartavanEck.woff') format('woff');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'KG What the Teacher Wants';
-    src: url('/assets/teach.woff2') format('woff2'),
-        url('/assets/teach.woff') format('woff');
+    src: url('../assets/teach.woff2') format('woff2'),
+        url('../assets/teach.woff') format('woff');
     font-weight: normal;
 }
      
@@ -21,6 +21,10 @@
 
 h1,h2{
     font-family: 'Comic Block DEMO by Marta van E';
+}
+
+body{
+    font-family: 'KG What the Teacher Wants';
 }
 
 h1{
@@ -46,9 +50,20 @@ h3{
 main{
     margin-bottom: 4em;
 }
-    body {
-        background-color: #CAE2CC;
-        padding:1rem
+
+html {
+    background-color: #CAE2CC;
+}
+
+body {
+        padding:1rem;
+        background-image: url("../images/veelstappen.png");
+        background-size: 16em auto;
+    
+        background-position: center 26vw;
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+    
     }
 
     footer {
@@ -112,7 +127,9 @@ main{
         flex-direction: column
     }
 
-    .stap1 section a{
+    .stap1 section:last-of-type a,
+    .stap2 section:last-of-type a,
+    .stap3 section:last-of-type a{
         display: flex;
         justify-content: center;
         align-content: center;
@@ -123,7 +140,9 @@ main{
         text-decoration: none;
     }
  
-    .stap1 section:last-of-type{
+    .stap1 section:last-of-type,
+    .stap2 section:last-of-type,
+    .stap3 section:last-of-type{
         background: none;
     }
     section:last-of-type a{
@@ -175,9 +194,9 @@ gap: 1em;
     flex-direction: column;
 }
 
-.fixed{
+/* .fixed{
     position:fixed;
     top: 30%;
     right: 30%;
     z-index: -1;
-}
+} */
