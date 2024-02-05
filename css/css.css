@@ -1,9 +1,184 @@
-footer {
-    position: sticky;
-    position: relative;
+     @font-face {
+    font-family: 'Comic Block DEMO by Marta van E';
+    src: url('/assets/ComicBlockDEMObyMartavanEck.woff2') format('woff2'),
+        url('/assets/ComicBlockDEMObyMartavanEck.woff') format('woff');
+    font-weight: normal;
 }
 
-footer nav ul {
-    list-style: none;
+@font-face {
+    font-family: 'KG What the Teacher Wants';
+    src: url('/assets/teach.woff2') format('woff2'),
+        url('/assets/teach.woff') format('woff');
+    font-weight: normal;
+}
+     
+     /* sterretje selector voor alles */
+     *,html {
+    padding: 0;
+    margin: 0;
+    font-family: 'KG What the Teacher Wants';
+    }
+
+h1,h2{
+    font-family: 'Comic Block DEMO by Marta van E';
+}
+
+h1{
+    font-size: 4em;
+}
+
+h2{
+    font-size: 2em;
+}
+h3{
+    color: rgb(13, 203, 169);
+}
+
+
+ /* Body */
+
+ header {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+ }
+main{
+    margin-bottom: 4em;
+}
+    body {
+        background-color: #CAE2CC;
+        padding:1rem
+    }
+
+    footer {
+        position: fixed;
+        background-color:#A599Bf;
+        bottom: .5em;
+        left: 2%;
+        width: 95%;
+        height: 3.5em;
+        border-radius: 5em;
+        
+    }
+
+    footer nav ul a{
+        background-color:#A599Bf;
+        color: azure;
+        text-decoration: none;
+    }
+
+    footer nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+    }
+    
+    footer nav ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        
+    }
+
+     article h2{
+        display: none;
+     }
+
+    section {
+        background-color:#87CA94;
+        border-radius: 1em;
+        padding: 1em;
+        margin: 1em 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    section:first-of-type{
+        background-color: rgb(251, 255, 0);
+    }
+
+
+
+    section:last-of-type{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .index section:last-of-type{
+        flex-direction: column
+    }
+
+    section a{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        color: white;
+        background-color:palevioletred;
+        padding: .5em;
+        border-radius: 2.5em;
+        text-decoration: none;
+    }
+ 
+    .stap1 section:last-of-type{
+        background: none;
+    }
+    section:last-of-type a{
+        width:50%
+    }
+
+    img{
+        width: 30%;
+    }
+
+
+.multiply{
+    mix-blend-mode: multiply;
+}
+.stap1 section{
+    background-color: rgb(111, 129, 233);
+}
+
+.stap3 section{
+    background-color:coral
+
+}
+.bronnen main{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 1em;
+
+}
+.bronnen section{
+    justify-content: start;
+    width: 35%;
+    margin: 0;
+    padding: 1em;
+    
+
+}
+
+
+.bronnen section ul{
+    list-style: none;
+}
+.bronnen section a{
+    justify-content: flex-start;
+    background:none;
+    color: black;
+}
+
+.bronnen section:last-of-type{
+    flex-direction: column;
+}
+
+.fixed{
+    position:fixed;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
 }
