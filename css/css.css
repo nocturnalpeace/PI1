@@ -191,6 +191,19 @@ body {
         justify-content: center;
     }
 
+    .index section:last-of-type a{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        color: white;
+        background-color:palevioletred;
+        padding: .5em;
+        border-radius: 2.5em;
+        text-decoration: none;
+
+    }
+
     .index section:last-of-type{
         flex-direction: column
     }
