@@ -11,6 +11,7 @@
         url('../assets/teach.woff') format('woff');
     font-weight: normal;
 }
+
      
      /* sterretje selector voor alles */
      *,html {
@@ -35,8 +36,13 @@ h2{
     font-size: 2em;
 }
 h3{
-    color: rgb(13, 203, 169);
+    color: rgb(3, 3, 3);
 }
+
+.dark-mode {
+    background-color: rgb(54, 51, 51);
+    color: rgb(0, 0, 0);
+  }
 
 
  /* Body */
@@ -67,8 +73,6 @@ h3{
  header nav.open {
     translate: 0% 0;
 }
-
-
 
  header nav ul {
  list-style:none;
@@ -177,7 +181,7 @@ body {
     }
 
     section:first-of-type{
-        background-color: rgb(251, 255, 0);
+        background-color: rgb(145, 240, 119);
     }
 
 
@@ -261,7 +265,7 @@ gap: 1em;
 /* het formulier */
 
 form {
-    /* voor uimte tussen de feildsets en ook de button */
+    /* voor ruimte tussen de fieldsets en ook de button */
     display:grid;
     gap:1em;
 }
